@@ -1,4 +1,5 @@
-PATCHNOTES
+PATCHNOTES 3/09/2026
+
 
 
 ![Content update banner](images/voorbeeld.svg)
