@@ -1,32 +1,36 @@
-# Patchnotes
+PATCHNOTES
 
-## Versie 1.0.0 - 28/08/2026
-- Server online gebracht
-- **Startgebied** aangepast
-- Enkele *quest-bugs* opgelost
 
 ![Content update banner](images/voorbeeld.svg)
-
-We are excited to announce that the **Trial of the Crusader** will open
-on July 4th at 14:00 server time, unlocking this iconic raid. There will
-be no downtime and the raid will become _instantly available_ at the
-time above.
-
-## Versie 0.9.0 - 20/08/2026
-- Eerste testfase gestart
+# The gates of Icecrown Citadel are about to open. 
 
 
-### Hoe werkt dit bestand?
+The campaign against the Lich King has reached its final and most dangerous stage. Beyond the frozen walls of Icecrown Citadel, the greatest servants of the Scourge stand ready, and at the summit of the fortress, the Lich King awaits those brave enough to challenge his reign.
+We are excited to announce that Icecrown Citadel Normal will open on September 5nd at 14:00 server time, unlocking the next major raid tier on Onyxia. There will be no downtime, the raid will become instantly available at the time above.
+Icecrown Citadel Heroic will remain closed until a week later. September 12th at 14:00.
+Gather your trusted allies, prepare your strongest equipment, and ready yourselves for the assault on the heart of the Scourge.
 
-Dit is nog steeds gewoon platte tekst, met een klein beetje lichte
-opmaak die je zelf kan gebruiken:
 
-- **tekst tussen dubbele sterretjes** wordt vet
-- *tekst tussen enkele sterretjes* (of _underscores_) wordt cursief
-- Een regel die begint met #, ## of ### wordt een titel/kopje
-  (drie groottes, zie hierboven)
-- ![omschrijving](images/bestand.jpg) toont een afbeelding uit de map
-  "images" naast dit bestand
+## Content release
+Onyxia will progress into its next content tier with this raid release, unlocking the new vendors, instances, and relevant content automatically.
+The content will include Icecrown Citadel, related dungeons (The Forge of Souls, Pit of Saron, and Halls of Reflection), and Vault of Archavon (Toravon).
+Adventurers will be able to fight their way through Icecrown Citadel, confronting some of the Lich King's most powerful servants before ultimately ascending to the Frozen Throne itself.
+The Realm First! Fall of the Lich King achievement will be awarded to the first group on the realm to defeat the Lich King on 25-player Heroic difficulty.
+The [Strength of Wrynn] and [Hellscream's Warsong] buffs will remain on 0% until the realm first has been cleared, after which it will increase by 5% every week.
 
-Sla het bestand op, klik in de launcher op het vernieuw-icoontje, en je
-ziet de wijzigingen meteen terug.
+More details and information regarding the length of the content tier and the next content to be released will be published in a new thread.
+
+Battlegroup II – Season Continuation
+
+Battlegroup II: Season Rewards and Rules
+
+Arena Season 7 will conclude on September 2nd at 19:00.
+Eligibility requirements (you WILL NOT receive rewards if any of the following apply):
+
+Personal rating is not within 150 of your team rating.
+You have less than 70% of the team's games played.
+Extreme MMR dropping, win-trading, or exploiting. Violations may lead to team disbanding, disqualification, and possible account disciplinary action.
+Gladiator titles in 3v3 require 2000+ rating.
+
+
+Season end info: Arena points will be wiped at the close of the season. Honor points will remain.
