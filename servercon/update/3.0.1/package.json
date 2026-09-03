@@ -1,0 +1,39 @@
+{
+  "name": "wotlk-launcher",
+  "version": "3.0.1",
+  "description": "Custom launcher voor WoW WotLK 3.3.5",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.custom.wotlklauncher",
+    "productName": "WotLK Launcher",
+    "asar": false,
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "WotLK Launcher",
+      "runAfterFinish": true
+    },
+    "files": [
+      "**/*",
+      "!node_modules/electron-builder"
+    ]
+  }
+}
