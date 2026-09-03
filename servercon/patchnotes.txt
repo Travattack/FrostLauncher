@@ -1,0 +1,32 @@
+# Patchnotes
+
+## Versie 1.0.0 - 28/08/2026
+- Server online gebracht
+- **Startgebied** aangepast
+- Enkele *quest-bugs* opgelost
+
+![Content update banner](images/voorbeeld.svg)
+
+We are excited to announce that the **Trial of the Crusader** will open
+on July 4th at 14:00 server time, unlocking this iconic raid. There will
+be no downtime and the raid will become _instantly available_ at the
+time above.
+
+## Versie 0.9.0 - 20/08/2026
+- Eerste testfase gestart
+
+
+### Hoe werkt dit bestand?
+
+Dit is nog steeds gewoon platte tekst, met een klein beetje lichte
+opmaak die je zelf kan gebruiken:
+
+- **tekst tussen dubbele sterretjes** wordt vet
+- *tekst tussen enkele sterretjes* (of _underscores_) wordt cursief
+- Een regel die begint met #, ## of ### wordt een titel/kopje
+  (drie groottes, zie hierboven)
+- ![omschrijving](images/bestand.jpg) toont een afbeelding uit de map
+  "images" naast dit bestand
+
+Sla het bestand op, klik in de launcher op het vernieuw-icoontje, en je
+ziet de wijzigingen meteen terug.

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bannerBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1f2c"/>
+      <stop offset="100%" stop-color="#050a10"/>
+    </linearGradient>
+    <linearGradient id="bannerGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2d896"/>
+      <stop offset="100%" stop-color="#cda247"/>
+    </linearGradient>
+    <radialGradient id="bannerGlow" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#7fd0f4" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#7fd0f4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="260" fill="url(#bannerBg)"/>
+  <rect width="800" height="260" fill="url(#bannerGlow)"/>
+
+  <!-- eenvoudige ijskristal-motieven -->
+  <g stroke="#7fd0f4" stroke-opacity="0.35" stroke-width="1.5" fill="none">
+    <path d="M60 40 L60 90 M40 55 L80 75 M40 75 L80 55"/>
+    <path d="M730 190 L730 240 M710 205 L750 225 M710 225 L750 205"/>
+    <path d="M690 30 L690 60 M676 40 L704 50 M676 50 L704 40"/>
+  </g>
+
+  <text x="400" y="115" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-weight="700"
+        font-size="40" letter-spacing="3" fill="url(#bannerGold)">
+    CONTENT UPDATE
+  </text>
+  <text x="400" y="160" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-style="italic"
+        font-size="20" letter-spacing="4" fill="#cdeeff" opacity="0.85">
+    Argent Coliseum &amp; Trial of the Crusader
+  </text>
+
+  <rect x="260" y="190" width="280" height="1" fill="#7fd0f4" opacity="0.3"/>
+</svg>
