@@ -1,0 +1,14 @@
+{
+  "_lees_mij": "Deze velden bepalen uit welke publieke GitHub-repository de launcher zijn patchnotes, thema-bestanden en updates haalt. Dit bestand wordt meegeleverd met de installer, dus spelers hoeven niets in te stellen.",
+  "owner": "Travattack",
+  "repo": "FrostLauncher",
+  "branch": "main",
+  "infoFilePath": "servercon/patchnotes.txt",
+  "updateFolderPath": "servercon/update",
+  "themeFolderPath": "servercon/theme",
+
+  "_lees_mij_status": "Server waarvan de status onderin de launcher getoond wordt. 3724 is de standaardpoort van de WoW-authenticatieserver. Zet dit op je eigen logon-server als je die van Warmane niet wil gebruiken. Minimum interval is 15 seconden.",
+  "statusHost": "logon.warmane.com",
+  "statusPort": 3724,
+  "statusIntervalSeconds": 60
+}
