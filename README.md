@@ -4,7 +4,7 @@ A fan-made game launcher for private World of Warcraft: Wrath of the Lich King (
 
 It gives a private realm the thing it usually lacks: a proper front door. One big PLAY button, patch notes the realm owner can edit from a browser, a live realm-status light, and a launcher that keeps itself up to date — without players ever having to download a zip or replace a file by hand.
 
-This is a hobby project by a fan, for fans. It is not affiliated with, endorsed by, sponsored by, or connected to Blizzard Entertainment in any way. It ships no game files and no Blizzard content — no artwork, logos, fonts, music, or client data. Every visual in the launcher was drawn from scratch in CSS and SVG. You need your own legally obtained game client, and you point the launcher at it yourself.
+This is a hobby project by a fan, for fans. It is not affiliated with, endorsed by, sponsored by, or connected to Blizzard Entertainment in any way. It ships no game files and no Blizzard content — no artwork, logos, fonts, music, or client data. 
 
 What it does
 One-time setup for the player. Click the gear, browse to your Wow.exe, done. The path is remembered.
