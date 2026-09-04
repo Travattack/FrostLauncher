@@ -1,4 +1,4 @@
-FrostLauncher
+FROSTLAUNCHER (Beta)
 
 A fan-made game launcher for private World of Warcraft: Wrath of the Lich King (3.3.5a) realms.
 
