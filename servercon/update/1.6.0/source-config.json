@@ -1,8 +1,0 @@
-{
-  "_lees_mij": "Vul owner en repo EENMALIG in met je publieke GitHub-repository, voordat je een installer bouwt. Dit bestand wordt meegeleverd met de app, dus spelers hoeven niets in te stellen. Onderstaande drie velden passen bij de mapstructuur van servercon/ en hoef je normaal niet te wijzigen.",
-  "owner": "",
-  "repo": "",
-  "branch": "main",
-  "infoFilePath": "servercon/patchnotes.txt",
-  "updateFolderPath": "servercon/update"
-}
