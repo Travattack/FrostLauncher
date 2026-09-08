@@ -385,10 +385,3 @@ omdat de update-bestanden anders niet los overschreven kunnen worden.
 
 ---
 
-## Let op: auteursrecht
-
-Deze launcher gebruikt geen originele Blizzard-assets (logo's,
-lettertypes, achtergrondafbeeldingen) — alles is met CSS opnieuw
-opgebouwd in een vergelijkbare sfeer. Wil je zelf artwork toevoegen
-(achtergrond, muziek), zorg dan dat je daar de rechten voor hebt en
-gebruik het alleen voor persoonlijk gebruik.
