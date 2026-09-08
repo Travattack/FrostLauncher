@@ -1,0 +1,20 @@
+Zet hier je eigen muziekbestand neer met de naam:
+
+    theme.mp3
+
+De launcher speelt dit automatisch (in een loop) af zodra hij opstart, en
+stopt zodra je op SPEEL drukt. Via het luidspreker-icoontje naast het
+tandwiel kan de gebruiker de muziek dempen — die keuze wordt onthouden.
+
+BELANGRIJK — auteursrecht:
+Gebruik hier geen originele soundtrack uit World of Warcraft of The Lord
+of the Rings; die is auteursrechtelijk beschermd. Zoek in plaats daarvan
+naar rechtenvrije ("royalty-free") epische orkestmuziek, bijvoorbeeld op:
+
+  - Pixabay Music (pixabay.com/music) — gratis, geen naamsvermelding nodig
+  - Free Music Archive (freemusicarchive.org)
+  - Kevin MacLeod / incompetech.com (gratis met naamsvermelding)
+  - YouTube Audio Library (via YouTube Studio)
+
+Zoek daar op termen als "epic orchestral", "fantasy cinematic" of
+"heroic theme" voor iets in de juiste sfeer.
