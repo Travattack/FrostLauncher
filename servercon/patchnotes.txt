@@ -1,9 +1,9 @@
 PATCHNOTES
 
-September 6, 2026 # The Icecrown Citadel has been released!
+# September 6, 2026 The Icecrown Citadel has been released!
 
 ![Content update banner](images/voorbeeld.svg)
-August 18, 2026 # The gates of Icecrown Citadel are about to open. 
+# August 18, 2026 The gates of Icecrown Citadel are about to open. 
 
 
 The campaign against the Lich King has reached its final and most dangerous stage. Beyond the frozen walls of Icecrown Citadel, the greatest servants of the Scourge stand ready, and at the summit of the fortress, the Lich King awaits those brave enough to challenge his reign.
