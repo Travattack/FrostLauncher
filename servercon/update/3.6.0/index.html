@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WotLK Launcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="bg-layer">
+    <div class="bg-default"></div>
+    <img id="customBackground" class="bg-custom" src="assets/theme.jpg" alt="" />
+  </div>
+  <div class="frost-overlay" id="frostOverlay"></div>
+
+  <!-- Custom titlebar -->
+  <div class="titlebar">
+    <div class="titlebar-drag">
+      <span class="titlebar-label">WRATH OF THE LICH KING &mdash; LAUNCHER</span>
+    </div>
+    <div class="titlebar-buttons">
+      <button id="minBtn" class="tb-btn" title="Minimize">&#x2013;</button>
+      <button id="closeBtn" class="tb-btn tb-close" title="Close">&#x2715;</button>
+    </div>
+  </div>
+
+  <!-- Achtergrondmuziek: zet zelf een track in assets/music/theme.mp3 -->
+  <audio id="bgMusic" src="assets/music/theme.mp3" loop preload="auto"></audio>
+
+  <!-- Mute-knop naast het tandwiel -->
+  <button id="muteBtn" class="gear-btn mute-btn" title="Turn music off">&#128266;</button>
+
+  <!-- Tandwiel rechtsboven -->
+  <button id="settingsBtn" class="gear-btn" title="Settings">&#9881;</button>
+
+  <!-- Instellingenpaneel (verborgen tot je op het tandwiel klikt) -->
+  <div id="settingsPanel" class="settings-panel hidden">
+    <p class="settings-title">Game executable</p>
+    <div class="path-row">
+      <span class="path-icon">&#9670;</span>
+      <input id="pathDisplay" class="path-display" type="text" readonly
+             placeholder="No file selected..." />
+    </div>
+    <button id="browseBtn" class="btn btn-ghost btn-full">Browse...</button>
+
+    <div class="settings-divider"></div>
+
+    <p class="settings-title">Repair</p>
+    <p class="settings-hint">
+      Something not working right? This downloads all launcher files again
+      and restarts. Your Wow.exe path and music setting are kept.
+    </p>
+    <button id="repairBtn" class="btn btn-ghost btn-full">Repair installation</button>
+  </div>
+
+  <main class="stage">
+    <div class="titles">
+      <h1 class="game-title">WORLD <span class="ampersand">of</span> WARCRAFT</h1>
+      <h2 class="expansion-title">Wrath of the Lich King</h2>
+      <p class="tagline">Patch 3.3.5a</p>
+    </div>
+
+    <p id="hintMsg" class="hint-msg"></p>
+  </main>
+
+  <!-- Klein knopje onder PLAY om de patchnotes te openen -->
+  <button id="patchnotesBtn" class="btn btn-ghost patchnotes-toggle">
+    Patch notes
+    <span id="patchnotesBadge" class="patchnotes-badge"></span>
+  </button>
+
+  <footer class="action-bar">
+
+    <!-- Skeletdraak die af en toe door de onderste balk vliegt. Zelf
+         getekend uit botlijnen, geen spel-artwork. Zit achter de tekst en
+         de PLAY-knop en vangt geen muisklikken. -->
+    <div class="runner-track" aria-hidden="true">
+      <div class="runner-dragon">
+        <svg viewBox="0 0 220 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="bones" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+
+            <!-- verre vleugel: dimmer en iets na op de nabije, voor diepte -->
+            <g class="wing wing-far" opacity="0.3">
+              <path d="M118 60 L 102 28 L 76 17" stroke-width="3.6" />
+              <g class="outer">
+                <path d="M76 17 L 46 32" stroke-width="2.3" />
+                <path d="M76 17 L 60 48" stroke-width="2.3" />
+                <path d="M76 17 L 80 58" stroke-width="2.3" />
+                <path d="M76 17 L 104 57" stroke-width="2.3" />
+                <path d="M46 32 C 50 39, 56 45, 60 48" stroke-width="1.4" opacity="0.7" />
+                <path d="M60 48 C 67 54, 75 57, 80 58" stroke-width="1.4" opacity="0.7" />
+                <path d="M80 58 C 88 60, 98 60, 104 57" stroke-width="1.4" opacity="0.7" />
+              </g>
+            </g>
+
+            <!-- staart: dikker bij het lichaam, uitlopend in losse wervels -->
+            <path d="M78 64 C 64 71, 50 77, 38 81" stroke-width="4" />
+            <path d="M38 81 C 30 84, 22 86, 14 88" stroke-width="2.6" opacity="0.9" />
+            <path d="M66 70 L 65 75" stroke-width="1.6" opacity="0.7" />
+            <path d="M56 74 L 55 79" stroke-width="1.6" opacity="0.7" />
+            <path d="M46 78 L 45 83" stroke-width="1.6" opacity="0.7" />
+
+            <!-- rug met stekels -->
+            <path d="M78 62 C 92 55, 110 53, 126 57" stroke-width="5" />
+            <path d="M88 57 L 86 50" stroke-width="1.8" opacity="0.8" />
+            <path d="M98 54 L 97 47" stroke-width="1.8" opacity="0.8" />
+            <path d="M108 53 L 108 46" stroke-width="1.8" opacity="0.8" />
+            <path d="M118 54 L 119 48" stroke-width="1.8" opacity="0.8" />
+
+            <!-- nek: slangachtige boog naar de kop -->
+            <path d="M126 57 C 142 54, 154 48, 166 42" stroke-width="4.4" />
+            <path d="M138 55 L 140 61" stroke-width="1.6" opacity="0.7" />
+            <path d="M148 52 L 150 58" stroke-width="1.6" opacity="0.7" />
+            <path d="M158 47 L 160 53" stroke-width="1.6" opacity="0.7" />
+
+            <!-- schedel: langwerpig, met kaak, oogkas en twee horens -->
+            <path d="M166 40 L 184 41 L 203 51 L 204 56 L 194 56 L 174 48 L 165 45 Z"
+                  stroke-width="2.4" />
+            <path d="M175 49 L 198 57" stroke-width="1.9" />
+            <circle cx="175" cy="44" r="2.4" stroke-width="1.5" />
+            <path d="M168 39 C 164 32, 158 28, 152 27" stroke-width="2.2" opacity="0.9" />
+            <path d="M172 40 C 170 34, 166 30, 161 28" stroke-width="1.9" opacity="0.75" />
+
+            <!-- ribbenkast -->
+            <path d="M122 58 C 128 68, 124 78, 116 82" stroke-width="2" opacity="0.9" />
+            <path d="M114 55 C 121 67, 117 78, 108 82" stroke-width="2" opacity="0.9" />
+            <path d="M106 54 C 113 66, 109 77, 100 81" stroke-width="2" opacity="0.9" />
+            <path d="M98 54 C 104 66, 100 76, 92 79" stroke-width="2" opacity="0.9" />
+            <path d="M90 56 C 96 66, 93 74, 86 77" stroke-width="2" opacity="0.85" />
+            <path d="M86 77 C 98 84, 110 85, 116 82" stroke-width="2" opacity="0.65" />
+
+            <!-- opgetrokken achterpoot: in de vlucht onder het lichaam gevouwen -->
+            <g class="legs">
+              <path d="M96 76 L 106 88 L 94 93" stroke-width="3.6" opacity="0.5" />
+              <path d="M94 93 L 88 90" stroke-width="2.8" opacity="0.5" />
+              <path d="M92 74 L 103 87 L 90 92" stroke-width="4" />
+              <path d="M90 92 L 83 89" stroke-width="3" />
+            </g>
+
+            <!-- nabije vleugel -->
+            <g class="wing wing-near">
+              <path d="M122 58 L 104 22 L 74 10" stroke-width="4.4" />
+              <g class="outer">
+                <path d="M74 10 L 40 26" stroke-width="2.6" />
+                <path d="M74 10 L 56 44" stroke-width="2.6" />
+                <path d="M74 10 L 78 56" stroke-width="2.6" />
+                <path d="M74 10 L 104 54" stroke-width="2.6" />
+                <path d="M40 26 C 45 34, 51 41, 56 44" stroke-width="1.6" opacity="0.75" />
+                <path d="M56 44 C 64 51, 72 55, 78 56" stroke-width="1.6" opacity="0.75" />
+                <path d="M78 56 C 87 58, 98 58, 104 54" stroke-width="1.6" opacity="0.75" />
+              </g>
+            </g>
+
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="version-tag">
+      <span>Custom Launcher &middot; <span id="versionLabel">v...</span></span>
+      <span class="version-sep">&middot;</span>
+      <button id="serverStatus" class="server-status is-checking" type="button"
+              title="Checking realm status...">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="serverStatusLabel" class="status-label">Checking...</span>
+      </button>
+    </div>
+    <button id="playBtn" class="btn btn-play" disabled>
+      <span class="play-icon">&#9654;</span>
+      <span>PLAY</span>
+    </button>
+  </footer>
+
+  <!-- Patchnotes: los te openen, groter paneel -->
+  <div id="patchnotesModal" class="patchnotes-modal hidden">
+    <div class="patchnotes-backdrop" id="patchnotesBackdrop"></div>
+    <div class="patchnotes-box">
+      <div class="patchnotes-header">
+        <p class="settings-title">Patch notes</p>
+        <div class="patchnotes-header-actions">
+          <button id="refreshInfoBtn" class="tb-btn" title="Refresh">&#8635;</button>
+          <button id="closePatchnotesBtn" class="tb-btn" title="Close">&#x2715;</button>
+        </div>
+      </div>
+      <div id="infoContent" class="info-content">Loading...</div>
+    </div>
+  </div>
+
+  <!-- Update-overlay: verschijnt tijdens het bijwerken van de launcher -->
+  <div id="updateOverlay" class="update-overlay hidden">
+    <div class="update-box">
+      <div class="update-spinner"></div>
+      <p id="updateText">Updating...</p>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
+
