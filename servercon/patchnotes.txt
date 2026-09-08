@@ -1,5 +1,6 @@
 PATCHNOTES
 
+# The Icecrown Citadel has been released!
 
 ![Content update banner](images/voorbeeld.svg)
 # The gates of Icecrown Citadel are about to open. 
