@@ -1,6 +1,6 @@
 FROSTLAUNCHER (Beta)
 
-A fan-made game launcher for private World of Warcraft: Wrath of the Lich King (3.3.5a) realms.
+A fan-made game launcher for private World of Warcraft: Wrath of the Lich King (3.3.5a).
 
 It gives a private realm the thing it usually lacks: a proper front door. One big PLAY button, patch notes the realm owner can edit from a browser, a live realm-status light, and a launcher that keeps itself up to date — without players ever having to download a zip or replace a file by hand.
 
